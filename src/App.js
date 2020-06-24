@@ -54,7 +54,7 @@ class App extends Component {
                }/>
               <Route path="/about" exact render={() => <AboutPage title={this.state.about.title}/>}/>
               <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title}/>}/>
-              <Redirect to="/"/>
+              <Redirect to="/"/> 
 
               <Footer/>
 
