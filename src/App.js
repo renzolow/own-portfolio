@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -54,6 +54,7 @@ class App extends Component {
                }/>
               <Route path="/about" exact render={() => <AboutPage title={this.state.about.title}/>}/>
               <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title}/>}/>
+              <Redirect to="/"/>
 
               <Footer/>
 
